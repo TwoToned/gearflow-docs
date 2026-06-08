@@ -16,7 +16,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Inventory',
-      collapsed: true,
+      collapsed: false,
       items: [
         'inventory/overview',
         'inventory/equipment',
@@ -30,7 +30,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Projects',
-      collapsed: true,
+      collapsed: false,
       items: [
         'projects/overview',
         'projects/creating-projects',
@@ -43,30 +43,16 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Clients & Locations',
-      collapsed: true,
+      label: 'Clients',
+      collapsed: false,
       items: [
         'clients/overview',
       ],
     },
     {
       type: 'category',
-      label: 'Warehouse',
-      collapsed: true,
-      items: [
-        'warehouse/overview',
-        'warehouse/check-in-check-out',
-        'warehouse/pull-sheets',
-        'warehouse/stocktake',
-        'warehouse/reorder',
-        'warehouse/damage',
-        'warehouse/displays',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Documents & PDFs',
-      collapsed: true,
+      label: 'Documents',
+      collapsed: false,
       items: [
         'documents/overview',
         'documents/delivery-dockets',
@@ -79,7 +65,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Crew',
-      collapsed: true,
+      collapsed: false,
       items: [
         'crew/overview',
         'crew/planner',
@@ -90,7 +76,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Suppliers',
-      collapsed: true,
+      collapsed: false,
       items: [
         'suppliers/overview',
         'suppliers/purchase-orders',
@@ -99,8 +85,22 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Warehouse',
+      collapsed: false,
+      items: [
+        'warehouse/overview',
+        'warehouse/check-in-check-out',
+        'warehouse/pull-sheets',
+        'warehouse/stocktake',
+        'warehouse/reorder',
+        'warehouse/damage',
+        'warehouse/displays',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Compliance & Safety',
-      collapsed: true,
+      collapsed: false,
       items: [
         'compliance/overview',
         'compliance/test-and-tag',
@@ -111,8 +111,8 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Reporting',
-      collapsed: true,
+      label: 'Reports',
+      collapsed: false,
       items: [
         'reports/overview',
         'reports/built-in-reports',
@@ -122,8 +122,8 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Settings & Admin',
-      collapsed: true,
+      label: 'Settings',
+      collapsed: false,
       items: [
         'settings/overview',
         'settings/team-and-roles',
@@ -134,8 +134,8 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Mobile & Barcode',
-      collapsed: true,
+      label: 'Mobile',
+      collapsed: false,
       items: [
         'mobile/overview',
         'mobile/barcode-scanning',

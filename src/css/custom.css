@@ -1,29 +1,32 @@
 /**
  * GearFlow Docs — Custom CSS
- * Professional, clean theme for rental company operators.
+ * Industrial Calm aesthetic matching the GearFlow app.
+ * Primary: Teal (oklch 195°), Font: DM Sans.
  */
 
 :root {
-  --ifm-color-primary: #2563eb;
-  --ifm-color-primary-dark: #1d4ed8;
-  --ifm-color-primary-darker: #1e40af;
-  --ifm-color-primary-darkest: #1e3a8a;
-  --ifm-color-primary-light: #3b82f6;
-  --ifm-color-primary-lighter: #60a5fa;
-  --ifm-color-primary-lightest: #93c5fd;
+  /* GearFlow teal primary */
+  --ifm-color-primary: #2d9488;
+  --ifm-color-primary-dark: #27857a;
+  --ifm-color-primary-darker: #237066;
+  --ifm-color-primary-darkest: #1b5c54;
+  --ifm-color-primary-light: #39b3a3;
+  --ifm-color-primary-lighter: #4cc5b5;
+  --ifm-color-primary-lightest: #7dd8cc;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-base: 'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #60a5fa;
-  --ifm-color-primary-dark: #3b82f6;
-  --ifm-color-primary-darker: #2563eb;
-  --ifm-color-primary-darkest: #1d4ed8;
-  --ifm-color-primary-light: #93c5fd;
-  --ifm-color-primary-lighter: #bfdbfe;
-  --ifm-color-primary-lightest: #dbeafe;
+  /* Boosted teal for dark mode vibrancy */
+  --ifm-color-primary: #4cc5b5;
+  --ifm-color-primary-dark: #39b3a3;
+  --ifm-color-primary-darker: #2d9488;
+  --ifm-color-primary-darkest: #237066;
+  --ifm-color-primary-light: #7dd8cc;
+  --ifm-color-primary-lighter: #a3e0d7;
+  --ifm-color-primary-lightest: #c8ede5;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 

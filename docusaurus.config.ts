@@ -24,13 +24,38 @@ const config: Config = {
     locales: ['en'],
   },
 
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: 'anonymous',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap',
+      },
+    },
+  ],
+
   presets: [
     [
       'classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/TwoToned/gearflow-docs/tree/main/',
+          editUrl: 'https://github.com/TwoToned/gearflow-docs/tree/master/',
           showLastUpdateTime: true,
         },
         blog: false, // No blog — just docs
