@@ -1,0 +1,15 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GearFlow logo">
+  <defs>
+    <linearGradient id="gf-teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14b0a1"/>
+      <stop offset="1" stop-color="#0b7468"/>
+    </linearGradient>
+  </defs>
+  <!-- Gear teeth + body (even-odd punches the centre hole) -->
+  <path fill="url(#gf-teal)" fill-rule="evenodd" d="
+    M88 8h24l4 22a64 64 0 0 1 18 7.5l19-12 17 17-12 19a64 64 0 0 1 7.5 18l22 4v24l-22 4a64 64 0 0 1-7.5 18l12 19-17 17-19-12a64 64 0 0 1-18 7.5l-4 22H88l-4-22a64 64 0 0 1-18-7.5l-19 12-17-17 12-19a64 64 0 0 1-7.5-18l-22-4v-24l22-4a64 64 0 0 1 7.5-18l-12-19 17-17 19 12a64 64 0 0 1 18-7.5l4-22Z
+    M100 56a44 44 0 1 0 0 88 44 44 0 0 0 0-88Z"/>
+  <!-- Inner "GF" wordmark -->
+  <text x="100" y="117" text-anchor="middle" font-family="DM Sans, system-ui, sans-serif"
+        font-size="46" font-weight="800" fill="#ffffff" letter-spacing="-1">GF</text>
+</svg>
