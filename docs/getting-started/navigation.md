@@ -4,7 +4,9 @@ sidebar_position: 2
 
 # Navigation
 
-Learn how to move around GearFlow — the sidebar, search, command palette, and breadcrumbs.
+When a client calls mid-load-out asking whether their VL3500 Spots have left the building, you don't want to click through five menus to find out. GearFlow is built so you can jump to any asset, project, client, or warehouse view in a couple of keystrokes — the same speed you'd expect from your phone's spotlight search. The faster you move through the app, the less time at a desk and the more time on the floor.
+
+This page covers the three ways to get around: the sidebar for browsing, global search for finding a specific thing, and the command palette for power-user jumps and actions.
 
 ## Left sidebar
 
@@ -108,3 +110,8 @@ Click your avatar or initials in the top-right corner to open the user menu. Fro
 - **Sign Out** — log out of GearFlow
 
 Your role is displayed below your name. If you're an admin, you'll also see a link to the **Admin Panel**.
+
+## Next steps
+
+- [Account Setup](./account-setup.md) — secure your account with 2FA and passkeys, and set notification preferences
+- [Getting Started](../getting-started.md) — revisit the dashboard tour

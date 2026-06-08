@@ -59,8 +59,8 @@ Lists projects with deployments scheduled in the next few days. Each entry shows
 
 A running log of recent actions taken in your organisation — items deployed, returned, projects created, and inventory changes. This updates in real time as your team works.
 
-## What's next?
+## Next steps
 
-- Learn how to navigate the app in the **Navigation** guide
-- Set up your profile and security settings in **Account Setup**
+- [Navigation](./getting-started/navigation.md) — learn the sidebar, search, and command palette
+- [Account Setup](./getting-started/account-setup.md) — set up your profile, 2FA, and passkeys
 - Start adding your equipment in **Inventory**

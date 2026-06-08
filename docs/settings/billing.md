@@ -4,7 +4,9 @@ sidebar_position: 4
 
 # Billing
 
-The **Billing** section in Settings lets you manage your GearFlow subscription.
+The **Billing** section in Settings is where you manage your GearFlow subscription — your plan, the card you pay with, and every invoice.
+
+Your plan should track the size of your operation. A two-person AV outfit running a handful of corporate gigs needs far less than a regional staging house with a full warehouse crew, dozens of active projects, and theatre clients booking months out. As you take on more gear and more people, you upgrade; if a quiet off-season hits, you can scale back. This page is also where you keep payment details current so a card expiry never interrupts access mid-festival.
 
 ## Subscription plan
 
@@ -13,6 +15,8 @@ Your current plan and its features are displayed at the top of the billing page.
 - **View your plan** — see which plan you're on and what's included
 - **Upgrade or downgrade** — switch between plans as your needs change
 - **See usage** — view your current usage against plan limits
+
+For example, if your team grows past your current plan's seat limit when you bring on a second warehouse lead and an account manager for the autumn theatre season, the usage figures here flag it before an invite is blocked — so you upgrade ahead of the rush rather than during it.
 
 ## Payment method
 
@@ -56,3 +60,9 @@ After cancellation, you'll have access until the end of your current billing per
 ## Need help?
 
 If you have billing questions or need to discuss enterprise pricing, contact the GearFlow team through the support channel available in the app.
+
+## Next steps
+
+- **[Team & Roles](./team-and-roles.md)** — add the crew and office staff your plan's seats cover.
+- **[Branding](./branding.md)** — put your logo and colours on the documents you send to clients.
+- **[Settings overview](./overview.md)** — return to the full list of organisation settings.

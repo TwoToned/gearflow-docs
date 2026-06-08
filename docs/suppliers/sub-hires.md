@@ -4,13 +4,19 @@ sidebar_position: 2
 
 # Sub-Hires
 
-A sub-hire is when you rent gear from another supplier for a specific project — you don't own the gear, you're hiring it in on behalf of your client. GearFlow tracks the full order: what you're paying the supplier, what you're charging the client, and the margin.
+A sub-hire is gear you rent in from another supplier for a specific job because you don't own it, or don't own enough of it. You're the one on the hook to the client, but the kit comes from someone else's warehouse.
+
+Every rental house does this constantly. A festival main stage calls for 24 moving heads and you only own 16, so you sub-hire the extra eight Robe MegaPointes from a friendly local supplier. A theatre production needs a grand piano mic'd up and you hire in a specialist DPA package. The job won't go out the door without that gear, so it has to live on the project — but you're paying a third party for it, and you need to know your margin.
+
+That's what a sub-hire order tracks: what you pay the supplier (**cost**), what you charge the client (**charge**), and the difference. It replaces the old habit of typing sub-hired gear in as free-text line items with no cost behind them.
 
 ## Managing sub-hires
 
 Sub-hires are managed from a project's **Equipment** tab. Open a project, scroll to the **Sub-Hire Orders** section to see all sub-hires for that project.
 
-Click **Add** > **Sub-hire** to create a new sub-hire order. Choose the supplier, enter the hire dates and notes, then add items.
+Click **Add** > **Sub-hire** to create a new sub-hire order. Choose the supplier, enter the hire dates and notes, then add items. For the festival example above, you'd pick your moving-light supplier, set the hire window to match the festival load-in and load-out, and add eight Robe MegaPointes.
+
+If you've already tried to add gear to the project and GearFlow warned you that stock was short, the **"Sub-hire N units instead"** shortcut on that warning jumps straight into this flow with the shortfall pre-filled.
 
 ## Sub-hire order structure
 
@@ -67,4 +73,14 @@ Sub-hire costs are included in the project's financial summary:
 Project margin = total - service costs - labour costs - sub-hire costs
 ```
 
-Sub-hire costs appear in the **Costs** section of the project summary alongside service and labour costs. Only Confirmed, On Hire, and Returned sub-hires are included in cost calculations.
+Sub-hire costs appear in the **Costs** section of the project summary alongside service and labour costs. Only Confirmed, On Hire, and Returned sub-hires are included in cost calculations — a Draft order you're still pricing won't drag down the margin until you commit to it.
+
+## In the warehouse
+
+Sub-hired gear flows through prep, deploy, and return just like your own kit. Because there's no internal asset record for someone else's MegaPointes, the items skip the scanner's asset picker and are prepped directly. When a group is involved (say a "Robe MegaPointe ×8" group), the warehouse shows it as a parent line with the individual units indented underneath, the same way kits behave. See **[Check-In & Check-Out](../warehouse/check-in-check-out.md)**.
+
+## Next steps
+
+- **[Check-In & Check-Out](../warehouse/check-in-check-out.md)** — prep, deploy, and return sub-hired gear alongside your own.
+- **[Purchase Orders](./purchase-orders.md)** — for gear you're buying to keep rather than hiring in.
+- **[Suppliers](./overview.md)** — manage the vendors you sub-hire from.

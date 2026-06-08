@@ -4,7 +4,9 @@ sidebar_position: 2
 
 # Line Items
 
-Line items are the equipment and services on a project. They live inside the **Equipment** tab and are organised into categories and groups.
+Line items are the individual pieces of equipment on a project — every console, amp, light, and cable you're sending out. They live inside the **Equipment** tab, where categories and groups turn a long flat list into something a client can read and a warehouse crew can pack.
+
+The structure matters because of what the client sees versus what you track. Take a corporate AGM: you might track every component individually — two line array hangs, a sub, a digital console, a 4-way RF rack, an IEM rack — but the client just wants to see "PA System" and "Wireless Package" with one price each. Groups give you exactly that: the gear inside is tracked for availability and warehouse pulls, while the quote shows a clean billable line.
 
 ## Hierarchy
 
@@ -76,3 +78,9 @@ When you add equipment with a model linked to your inventory, the rate flows fro
 - **Suggested price**: Groups show a suggested price calculated from their contained line items. Click to accept the suggestion or enter your own.
 
 See [Quotes](./quotes.md) for detailed pricing information.
+
+## Next steps
+
+- [Quotes](./quotes.md) — how groups and standalone items appear on the client quote, and how pricing is calculated
+- [Project Templates](./templates.md) — save a group like that RF rack as a reusable template
+- [Projects Overview](./overview.md) — see where line items sit in the project hierarchy

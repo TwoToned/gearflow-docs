@@ -4,7 +4,9 @@ sidebar_position: 2
 
 # Branding
 
-The **Branding** section of Settings lets you customise how GearFlow looks and feels for your team and appears on your documents.
+The **Branding** section of Settings controls how GearFlow looks to your team inside the app — and, more importantly, how your business looks to the outside world on every document you send.
+
+Branding matters because the quote you email to a venue's technical director, the packing list that travels with a flight case, and the invoice that lands with their accounts team are all your business in print. Set your logo and brand colour once and every PDF GearFlow generates carries them automatically. A lighting hire company can put its mark on a quote going to a theatre client, and the warehouse crew sees the same identity in the sidebar — so the whole operation feels like one coherent system rather than off-the-shelf software.
 
 ## Organisation branding
 
@@ -26,7 +28,7 @@ Set your organisation's primary and accent colours. These are applied to:
 - Document headers and footer bars
 - Status badges and indicators
 
-Enter hex colour codes or use the colour picker.
+Enter hex colour codes or use the colour picker. For example, a staging company with a deep teal brand can drop in its hex value once and every quote header, totals block, and footer bar picks it up — so a proposal for a corporate gala arrives looking like it came from your studio, not a generic template.
 
 ### Platform name
 
@@ -78,3 +80,9 @@ Changes are saved as a new version. Each template has version history so you can
 ### Document template permissions
 
 Managing document templates requires the `document.manage_templates` permission, granted to Owner, Admin, and Manager roles by default.
+
+## Next steps
+
+- **[Documents](../warehouse/pull-sheets.md)** — see the pull sheets, packing lists, and return sheets your warehouse crew works from.
+- **[Team & Roles](./team-and-roles.md)** — decide who can edit branding and document templates.
+- **[Billing](./billing.md)** — review your subscription plan and payment details.

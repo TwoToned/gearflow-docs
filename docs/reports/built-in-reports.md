@@ -4,7 +4,9 @@ sidebar_position: 1
 
 # Built-in Reports
 
-GearFlow ships with approximately 30 pre-built reports covering every area of your rental operation. They're grouped by category in the report library.
+Built-in reports are GearFlow's answers to the questions every rental manager asks on a Monday morning — what's overdue, who owes us money, which gear is sitting idle, where the maintenance budget went. There are roughly 30 of them, grouped by category in the report library, and each one runs against your live data with a single click. No setup, no query building.
+
+Reach for these before reaching for the [custom builder](./custom-reports.md). If a venue calls asking which of their last three shows still has gear out, **Overdue Returns** answers it on the spot. Planning next quarter's purchases? **Model Popularity** tells you which fixtures get booked over and over so you stop sub-hiring them. Every report exports to CSV for the accountant or PDF for a client, and any of them can be saved with your own filters for next time.
 
 ## Inventory reports
 
@@ -74,3 +76,9 @@ GearFlow ships with approximately 30 pre-built reports covering every area of yo
 6. Export via the **CSV** or **PDF** buttons.
 
 Each report runs against your current data. Results are paginated for fast loading. You can save a pre-built report as a new saved report with customised filters for quick access later.
+
+## Next steps
+
+- **[Custom Reports](./custom-reports.md)** — when no built-in report fits, build your own from any data source and save, share, or schedule it.
+- **[Asset Utilization](./utilization.md)** — the dedicated view behind the Asset Utilisation report, with idle and loss-making filters.
+- **[Reports overview](./overview.md)** — filters, exports, scheduling, and permissions that apply to every report.

@@ -4,7 +4,13 @@ sidebar_position: 3
 
 # Account Setup
 
-Manage your personal account settings — profile, security, notifications, and login methods.
+Your account is the key to your entire rental operation — quotes worth tens of thousands, client contact details, asset values, and the warehouse history of every job you've run. If a login leaks, someone could alter a quote going out to a venue, export your client list, or lock your crew out mid-bump-in. Securing your account isn't box-ticking; it's protecting the business.
+
+A practical scenario: your warehouse lead logs into GearFlow on a tablet on the loading dock to deploy a festival rig, then leaves the tablet on a road case. With a passkey tied to the device's fingerprint and 2FA on the account, that lost tablet is useless to anyone else. This page covers the profile, security, and notification settings that make that possible.
+
+![Sign in to GearFlow with your password, a passkey, or SSO](/img/screenshots/login.png)
+
+This page covers your personal account settings — profile, security, notifications, and login methods.
 
 ## Profile settings
 
@@ -125,3 +131,12 @@ To link a Google or Microsoft account to your existing GearFlow account:
 2. Click **Connect** next to Google or Microsoft.
 
 3. Authenticate with the provider. Your accounts are linked and you can sign in with either method.
+
+## Active sessions
+
+The **Security** tab also lists your active sessions — the devices currently signed in to your account. If you spot a warehouse tablet or laptop you no longer use, you can sign it out remotely from here. Worth a check after a busy tour when gear and devices have been on the road.
+
+## Next steps
+
+- [Navigation](./navigation.md) — find your way around with the sidebar, search, and command palette
+- [Getting Started](../getting-started.md) — revisit the dashboard tour and organisation setup

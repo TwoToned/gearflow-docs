@@ -4,7 +4,9 @@ sidebar_position: 1
 
 # Barcode Scanning
 
-GearFlow has a built-in barcode scanner that works with your device's camera — no external scanner needed. It reads standard barcodes and QR codes.
+GearFlow has a built-in barcode scanner that works with your device's camera — no external scanner gun needed. It reads standard barcodes and the QR codes GearFlow prints for your assets.
+
+Scanning is the fastest way to connect a physical piece of gear to its record. Instead of typing "TTP-00042" into a search box, you point your phone at the tag and GearFlow takes you straight there. On the warehouse floor this is the difference between a smooth bump-in and a bottleneck: a crew member scanning each case of dimmers as it's loaded gets an instant chime and a deployed status, so the next truck keeps moving. The same scan looks up an asset's history when a fixture comes back from a venue looking knocked about.
 
 ## Opening the scanner
 
@@ -76,4 +78,10 @@ GearFlow can generate QR codes for your assets. From any asset's detail page, cl
 
 ## Scanner audio
 
-On supported devices, the scanner plays a 1200 Hz chime on successful scan so you know the code was read without looking at the screen. The chime is short (150 ms) with a soft fade-out.
+On supported devices, the scanner plays a 1200 Hz chime on successful scan so you know the code was read without looking at the screen. The chime is short (150 ms) with a soft fade-out — useful when you're scanning a stack of cases by feel during a loud bump-in.
+
+## Next steps
+
+- **[Mobile & PWA](./overview.md)** — install GearFlow on your phone and learn the mobile interface.
+- **[Check-In / Check-Out](../warehouse/check-in-check-out.md)** — use scanning to deploy gear to a project and check it back in.
+- **[Equipment](../inventory/equipment.md)** — print QR labels for your assets so every item is scannable.

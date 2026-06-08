@@ -4,7 +4,9 @@ sidebar_position: 4
 
 # Check Items
 
-Quality check items are defined checks that must be completed before equipment goes out the door or when it comes back. They're assigned to equipment models or kits, and warehouse operators fill them out during prep and return flows.
+Check items are the quality checks your crew runs on gear before it leaves the warehouse and again when it comes back. You define them once in a shared library, assign them to equipment models or kits, and from then on they appear automatically in the warehouse prep and return flows — so the inspection happens the same way every time, regardless of who's on shift.
+
+This is how you stop predictable problems from reaching site. Before a truss order ships, a pre-hire check can prompt the operator to confirm "Spigots and R-clips present", "No cracks at weld points", and log the measured diagonal. When the truss returns, the same checks catch a bent chord before it's racked away and forgotten. And because every failure is recorded against the asset, a chord that keeps failing the weld check will eventually trip a maintenance alert on its own (see [Predictive maintenance](#predictive-maintenance)).
 
 ## Check item types
 
@@ -70,6 +72,10 @@ When prepping equipment for a project:
 
 If the model has no check items, the check form is skipped and the item is prepped directly.
 
+#### Keyboard shortcuts
+
+The form is built for barcode-scanner speed, so you can clear a queue without reaching for the mouse. On a Pass/Fail row: **P** passes the focused row, **F** fails it, and **A** passes all remaining rows. The **↑** / **↓** keys move the focus cursor between Pass/Fail rows (skipping notes, measurement, and dropdown rows), and **Enter** submits once every check has an answer. Shortcuts are suppressed while you're typing in a text, number, or notes field.
+
 ### Check queue
 
 When prepping or returning multiple items, the warehouse page builds a **check queue**. Items with checks go through the form one at a time. Items without checks are processed directly. Your barcode scanner stays focused on the input between checks so you can scan the next item without clicking.
@@ -121,3 +127,9 @@ If the same check item fails more than twice in the last three checks for an ass
 | Assign checks to models | Owner, Admin, Manager |
 | Complete checks during warehouse flow | Warehouse staff with `warehouse.scan` |
 | Close out projects | Owner, Admin, Manager + `warehouse.close` |
+
+## Next steps
+
+- **[Maintenance](./maintenance.md)** — see where the Preventative records from repeated check failures land.
+- **[Workshop](./workshop.md)** — work a flagged or auto-created repair through to a QA decision.
+- **[Warehouse overview](../warehouse/overview.md)** — understand the prep, deploy, and return flow that check items run inside.

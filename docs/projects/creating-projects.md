@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Creating Projects
 
+A project is the container for one rental job — its client, dates, venue, equipment, pricing, and crew. Creating it is the first thing you do when an enquiry lands, and it takes under a minute: enough detail to start quoting, with everything else filled in as the job firms up.
+
+For example, a theatre calls about their summer season — a six-week run of moving lights, a dimmer rack, and a small PA. You create the project as a **Theatre** type, set the client to the venue, drop in the season's start and end dates, and use **Match** to turn that range into billing weeks. You're now ready to build the equipment list and quote it, all while the job sits safely in **Enquiry** until you've sent something.
+
 ## Create a new project
 
 1. From the **Projects** page, click **+ New Project**.
@@ -64,3 +68,10 @@ You can also move backward if needed — for example, from Quoted back to Quotin
 3. Select **Cancel Project**.
 
 Cancelled projects remain in the system for reference. Only cancelled projects can be **deleted** — doing so releases all checked-out assets back to Available status and removes all project data.
+
+## Next steps
+
+- [Line Items](./line-items.md) — add equipment and organise it into categories and groups
+- [Quotes](./quotes.md) — price the job, apply discounts and tax, and send the quote
+- [Project Numbering](./project-numbering.md) — set up auto-generated project codes
+- [Project Templates](./templates.md) — spin up repeat jobs from a saved structure

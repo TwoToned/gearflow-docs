@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # Accessories
 
-Accessories are items that always ship with a parent asset — for example, a clamp and safety bond that travel with every moving light. Instead of remembering to add them to every project manually, you attach them once and GearFlow handles the rest.
+An **accessory** is a child item that is inseparable from a parent asset — the hook clamp and safety bond that must travel with every moving light, the powerCON cable a fixture won't turn on without, the DMX terminator on a media server. You attach it to the parent once, and from then on GearFlow carries it everywhere the parent goes: onto quotes, onto pick sheets, out the door at deploy, and back onto the shelf at return.
+
+This solves a problem every rental house knows by heart. You quote 30 moving lights, the crew loads 30 lights, and you find out at the venue that only 26 clamps made it onto the truck. Accessories make that impossible — bind the clamp and bond to the light once, and they're counted on every booking automatically, so what leaves the warehouse is always complete.
 
 ## How accessories are different from kits
 
@@ -116,3 +118,9 @@ Bulk Check-In returns everything in one action — no need to scan each parent's
 ## Mobile considerations
 
 On mobile, accessory sections are shown as expandable cards. Adding and removing accessories uses the same flow as desktop. The Bulk Check-In tab is available in the mobile warehouse view with touch-optimised number inputs.
+
+## Next steps
+
+- **[Equipment](./equipment.md)** — manage the parent assets and models your accessories attach to.
+- **[Kits](./kits.md)** — for gear that rents as a standalone bundle with its own tag and price, use a kit instead of an accessory.
+- **[Custom Fields](./custom-fields.md)** — track extra data on the assets that carry accessories.

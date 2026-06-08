@@ -4,7 +4,9 @@ sidebar_position: 5
 
 # Project Tasks
 
-Each project has a **Tasks** tab for tracking to-do items. Tasks work like a simple Asana-style list — create tasks, assign them, track progress.
+Every rental job has work around it that isn't equipment or crew — chasing a venue for loading dock access, confirming a power drop, booking the truck, sending the client their final running order. The **Tasks** tab keeps that work attached to the project itself, so it doesn't end up lost in Slack threads or a separate Asana board. It's a simple to-do list: create tasks, assign them to a person, and track them to done.
+
+For a theatre season's run, your tasks might be "Confirm fly-tower rigging points with venue", "Book bump-out truck for closing night", and "Send moving-light patch to the LD" — each with a due date and an owner. Anyone working the project sees exactly what's outstanding without leaving GearFlow.
 
 ## Creating a task
 
@@ -49,3 +51,8 @@ Your personal tasks across all projects are available from the home screen — i
 
 - Task assignment notifications and due-date reminders are planned for a future update.
 - Comments and @mentions on tasks are also on the roadmap.
+
+## Next steps
+
+- [Projects Overview](./overview.md) — see where tasks fit alongside equipment, labour, and crew
+- [Creating Projects](./creating-projects.md) — set up the project these tasks belong to

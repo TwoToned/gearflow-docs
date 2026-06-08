@@ -4,7 +4,9 @@ sidebar_position: 5
 
 # CSV Import / Export
 
-If you're migrating from spreadsheets or another system, CSV import lets you get your equipment into GearFlow in bulk. You can also export your current inventory for reporting or bulk editing.
+**CSV import** is how you get a whole catalogue into GearFlow at once instead of typing it in fixture by fixture. If you're switching from a spreadsheet, an old asset register, or another rental system, you export your data to CSV, map it to GearFlow's columns, and upload — hundreds of models and assets land in minutes. **Export** runs the other direction: pull your current inventory out for reporting, an insurance schedule, or a bulk rate update.
+
+The most common day-one task is onboarding. Say you're moving 400 lighting fixtures and 200 audio items off a spreadsheet you've maintained for years. Rather than re-key every serial number, you clean up the column headers, import your **models** first (the templates), then import the **assets** (the individual units) against them. The same round-trip — export, edit in Excel, re-import — is also the fastest way to push a price rise across your entire rate card before festival season.
 
 ## Exporting your inventory
 
@@ -118,3 +120,9 @@ Some rows succeeded, some didn't. Download the error report from the import dial
 ## Mobile considerations
 
 CSV import is available on mobile through the same **Import** button. Upload from your device's file storage. The progress bar and error display work the same as desktop. For large files, keep the browser tab active until the upload completes.
+
+## Next steps
+
+- **[Equipment](./equipment.md)** — review and fine-tune the models and assets you just imported.
+- **[Categories](./categories.md)** — make sure the category names in your CSV match existing categories so imported gear files correctly.
+- **[Custom Fields](./custom-fields.md)** — set up the extra attributes you want to track on imported assets.

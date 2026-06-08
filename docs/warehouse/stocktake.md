@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # Stocktake
 
-**Stocktake** is a periodic inventory count. You pick a location, scan everything physically present, and the system flags every discrepancy — missing items, unexpected items, wrong locations, quantity mismatches. Resolve each one and inventory updates on completion.
+A stocktake is a physical inventory count: you walk a location, scan everything that's actually on the shelf, and GearFlow tells you where reality and the system disagree. It's how you catch the slow drift that creeps into every rental warehouse — a fixture that never got checked back in, a box of cables that walked onto a job and never returned, stock sitting in the wrong room.
+
+The natural time to run one is before your busy season. A theatre supplier doing a full count in late summer before the autumn season finds that three Source Four bodies the system thinks are available are actually still in a road case from a show that struck months ago, and that the gel stock is half what the books claim. Better to know now than when a designer is waiting on them. You pick a location, scan everything physically present, and the system flags every discrepancy — missing items, unexpected items, wrong locations, quantity mismatches. Resolve each one and inventory updates on completion.
 
 ## Creating a stocktake
 
@@ -63,4 +65,10 @@ Once all discrepancies are resolved, complete the stocktake. All resolutions are
 
 ## Integration with reorder
 
-Stocktake counts that reveal shortfalls feed into the Reorder dashboard, so you can create supplier orders to restock what's low.
+Stocktake counts that reveal shortfalls feed into the Reorder dashboard, so you can create supplier orders to restock what's low. If your count showed the gel stock running thin, those bulk items will surface on the reorder queue ready to turn into a draft PO before the season starts.
+
+## Next steps
+
+- **[Reorder](./reorder.md)** — turn the shortfalls a count reveals into draft purchase orders.
+- **[Damage Capture](./damage.md)** — log condition issues you spot while counting.
+- **[Check-In & Check-Out](./check-in-check-out.md)** — the deploy/return flow that keeps inventory accurate between counts.

@@ -4,7 +4,9 @@ sidebar_position: 1
 
 # Test & Tag
 
-The Test & Tag module implements AS/NZS 3760:2022 electrical testing compliance. It manages the full lifecycle of equipment testing — from initial registration through quick-test workflows, result recording, label printing, and retest scheduling.
+Test & Tag is GearFlow's electrical safety testing module, built around AS/NZS 3760:2022. Most venues and event insurers won't let mains-powered gear on site without a current test tag, so this is the difference between loading in and being turned away at the dock. The module manages the full lifecycle — registering an item, running the test, recording the result, printing the label, and scheduling the next retest — so nothing ships with an expired tag.
+
+A typical use case: a touring company has a road case of 12 dimmer packs going out for a six-week run. Before they leave the warehouse, a crew member runs each pack through the quick-test wizard, prints a fresh label, and sets the next-due date past the tour's return. Every test lands in the asset's history, so when the dimmers come back the manager can see exactly what was tested, by whom, and when it's due again.
 
 ## Equipment classes
 
@@ -141,3 +143,9 @@ Labels print via the browser's print dialog. Use label sheets or adhesive-backed
 | Quick test | `/test-and-tag/quick-test` |
 | Reports | `/test-and-tag/reports` |
 | Test profiles (settings) | `/settings/test-and-tag/profiles` |
+
+## Next steps
+
+- **[Maintenance](./maintenance.md)** — a failed test can refer an item straight to an electrician; track that repair here.
+- **[Workshop](./workshop.md)** — follow a failed item through the repair queue to a Pass/Fail QA decision.
+- **[Compliance & Safety overview](./overview.md)** — see how Test & Tag fits alongside maintenance, workshop, and check items.

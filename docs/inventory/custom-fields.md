@@ -4,7 +4,9 @@ sidebar_position: 6
 
 # Custom Fields
 
-Custom fields let you track information that GearFlow doesn't capture out of the box. Add a **Voltage** field to track fixture power requirements, a **Colour** field for colour-changers, or a **Weight** field for rigging calculations.
+**Custom fields** let you record the gear-specific details GearFlow doesn't capture out of the box. Every rental house tracks something idiosyncratic — a rig number painted on the road case, the firmware version on a media server, the DMX footprint of a moving light, or the date a wireless mic was last frequency-coordinated. Define those fields once and they appear on every asset form and detail page, so the data lives with the gear instead of in a technician's head or a sticky note.
+
+A lighting house might add a **DMX Address** field and a **Firmware** field to its moving lights, so the crew chief can see at a glance that fixture `TTP-00042` is running v4.2 before it goes out. A theatre might add a **Hang Position** field to track where each Source Four lives in the repertory plot. You decide what matters; GearFlow stores it and makes it searchable on the asset.
 
 ## Available field types
 
@@ -63,3 +65,9 @@ To completely remove a field, delete it from the settings page. This removes the
 ## Mobile considerations
 
 On mobile, custom fields render in the same order and layout as desktop. Dropdown fields use a native picker. Date fields open the device date picker. Yes/No fields use touch-friendly toggle switches.
+
+## Next steps
+
+- **[Equipment](./equipment.md)** — see where custom fields appear on the asset create, edit, and detail pages.
+- **[CSV Import / Export](./csv-import.md)** — custom field values travel with assets in exports.
+- **[Settings overview](../settings/overview.md)** — custom field definitions are managed under organisation settings.

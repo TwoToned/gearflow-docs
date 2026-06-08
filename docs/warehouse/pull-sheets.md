@@ -4,7 +4,11 @@ sidebar_position: 2
 
 # Pull Sheets
 
-A **Pull Sheet** is a printable list of every item in a project. It's what your warehouse team uses to walk the shelves and pick gear.
+A **Pull Sheet** is a printable list of every item in a project — the paper (or PDF) your warehouse team carries while they walk the shelves and pick gear. It's the bridge between what was quoted on a project and what physically leaves the building.
+
+When a tour load-out is staged across three aisles and you've got a casual picker who doesn't know your shelf layout, a pull sheet is what stops the truck leaving without the spare lamps. It lists every fixture, cable, and case grouped the way they'll be packed, with a checkbox against each so nothing gets missed.
+
+![Generate a pull sheet from the warehouse Documents menu](/img/screenshots/warehouse.png)
 
 ## When to use a pull sheet
 
@@ -44,3 +48,9 @@ The Documents dropdown also gives you access to:
 - **Delivery Docket** — shows only deployed items, for the driver/crew taking gear to site
 - **Return Sheet** — shows only deployed or returned items, for the check-in process
 - **Quote / Invoice** — all items regardless of deployment status, for pricing reference
+
+## Next steps
+
+- **[Check-In & Check-Out](./check-in-check-out.md)** — the scan-based prep, deploy, and return flow the pull sheet supports.
+- **[Delivery Dockets](../documents/delivery-dockets.md)** — the dispatch paperwork that travels with the gear.
+- **[Warehouse Displays](./displays.md)** — show dispatch and prep progress on a warehouse screen.

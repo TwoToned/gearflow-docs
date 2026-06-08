@@ -4,6 +4,10 @@ sidebar_position: 3
 
 # Quotes
 
+A quote is the priced equipment list you send a client to win the job. In GearFlow it isn't a separate document you build by hand — it's generated straight from the project's groups and line items, with pricing, discount, and tax applied automatically. Get the equipment list and billing period right, and the quote takes care of itself.
+
+Consider a national tour leg: five shows over ten days. You set the billing period once on the project — GearFlow's **Match** button turns the date range into billing weeks and days — and every group prices off its equipment's rate card across that window. A line array hang priced at a weekly rate, a few extra days on the IEM rack, a tour discount across the lot, GST on top. When the production manager asks for the quote, you generate the PDF in two clicks and email it from the project. If they push back on price, you adjust the groups and regenerate — the numbers stay consistent because they all come from the same source.
+
 ## Pricing structure
 
 GearFlow uses a **billing weeks and billing days** model for rental pricing.
@@ -100,3 +104,9 @@ A colour-coded bar gives a quick visual:
 | Below 20% | Red |
 
 Services and labour that are marked as **billable to client** flow into revenue instead of costs.
+
+## Next steps
+
+- [Line Items](./line-items.md) — structure equipment into the groups that become quote lines
+- [Creating Projects](./creating-projects.md) — set the billing period and tax rate that drive pricing
+- [Project Templates](./templates.md) — reuse a proven equipment-and-pricing structure on the next job

@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # Workshop
 
-The **Workshop** page (sidebar: **Workshop**) is a kanban board that shows your repair queue. It's a visual view over maintenance records — cards move through columns as work progresses, and a Completed lane archives finished jobs.
+The **Workshop** page is a kanban board for your repair queue. Instead of digging through maintenance records one at a time, your service tech sees every job at a glance and drags it across the board as work progresses — from first assessment, through parts and bench work, to a final quality check. It's a live view over your [maintenance records](./maintenance.md), not a separate system, so anything you log as a repair shows up here automatically.
+
+This is the bench tech's home screen. After a summer festival run, a dozen tickets land in the queue: a moving light with a dead fan, a hazer that's lost pressure, a snake with a crushed connector. The tech parks the hazer in **Awaiting Parts** while a seal kit is on order, pushes the moving light into **In Progress**, and when the snake is reterminated it goes to **QA** for a second set of eyes. Only a QA **Pass** releases gear back to Available — nothing sneaks back onto the floor untested.
 
 ## Board columns
 
@@ -79,3 +81,9 @@ The **Scheduled** column exists in the maintenance lifecycle but is not shown on
 - **Damage capture** links to the Workshop — major damage auto-creates tickets in the Awaiting Assessment column
 - **Maintenance photos** attached to a record are shown as thumbnails on workshop cards (up to 4 per card)
 - **Notifications** alert you when a repair has been in QA too long without a decision
+
+## Next steps
+
+- **[Maintenance](./maintenance.md)** — edit the underlying record, log costs, and add before/after photos that show up as card thumbnails.
+- **[Test & Tag](./test-and-tag.md)** — see how a failed electrical test refers an item into the repair queue.
+- **[Compliance & Safety overview](./overview.md)** — how the Workshop fits alongside testing, maintenance, and check items.

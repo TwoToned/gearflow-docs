@@ -4,7 +4,9 @@ sidebar_position: 2
 
 # Maintenance
 
-The Maintenance module lets you record and track servicing, repairs, inspections, and other work performed on your equipment. Maintenance records link to one or more assets and track the work from scheduling through to completion.
+The Maintenance module is your service log for every piece of gear you own — repairs, scheduled servicing, inspections, cleaning, and firmware updates. Each record links to one or more assets and tracks the work from the moment it's scheduled through to sign-off, holding the gear out of service so it can't accidentally get booked onto a project mid-repair.
+
+For a rental manager this is where the day-to-day reality of keeping kit show-ready gets captured. A Robe moving light comes back from a festival with a flickering LED engine; you open the fixture, log a Repair record, attach a photo of the fault, and the light drops out of the available pool until the work is signed off. Later you can see every record against that fixture — how often it's failed, what it's cost you, and whether it's worth keeping in the hire stock.
 
 ## Types of maintenance
 
@@ -55,7 +57,7 @@ The asset's status changes to **In Maintenance** while the record is in one of t
 
 ### Multi-asset
 
-For batch servicing (e.g. "re-lube all followspots"), create a maintenance record that links to multiple assets:
+For batch servicing — say, re-greasing the yokes on all eight followspots before pantomime season — create one maintenance record that links to multiple assets:
 
 1. Go to **Maintenance** and click **Add Record**.
 2. Select the **Type** and enter a **Description**.
@@ -94,7 +96,9 @@ Overdue maintenance generates notifications. The notification shows the first as
 
 Deleting a record releases any held assets back to their previous status. The deletion is atomic — the record, its asset links, and the status changes happen in a single transaction.
 
-## Related
+## Next steps
 
-- **[Workshop](./workshop.md)** — the kanban board view of the repair queue
-- **[Damage Capture](/docs/warehouse/damage)** — major or total damage can auto-create a Repair maintenance record
+- **[Workshop](./workshop.md)** — the kanban board view of the repair queue, where you move records through Awaiting Parts, In Progress, and a QA Pass/Fail decision.
+- **[Test & Tag](./test-and-tag.md)** — a failed electrical test can refer an item here as a Repair record automatically.
+- **[Check Items](./check-items.md)** — repeated check failures on the same asset auto-create a Preventative maintenance record.
+- **[Damage Capture](../warehouse/damage.md)** — major or total damage can auto-create a Repair maintenance record.

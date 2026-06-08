@@ -4,7 +4,11 @@ sidebar_position: 6
 
 # Warehouse Displays
 
-**Warehouse Display** screens show a live dashboard on wall-mounted TVs or monitors in your warehouse. No login required — open a URL and the display runs full-screen.
+A **Warehouse Display** is a live dashboard built for a wall-mounted TV or monitor on the warehouse floor — big text, dark background, readable from across the room, no login and no mouse. It answers the question every prep crew asks first thing in the morning: what's going out today, what's coming back, and is it all packed yet?
+
+On a Friday before a festival weekend, the screen by the loading dock shows three dispatches due before noon, each with a green/amber/red pack-progress indicator. The crew can see at a glance that the lighting package for the main stage is fully packed and green, but the audio job is still amber with cables outstanding — so they know where to put the next pair of hands without anyone shouting across the warehouse. Returns due that afternoon sit right alongside.
+
+![A warehouse screen keeps dispatch and prep status visible to the whole floor](/img/screenshots/warehouse.png)
 
 ## What displays show
 
@@ -48,3 +52,8 @@ From **Settings > Displays** you can:
 ## Display URLs
 
 Display URLs look like `/warehouse/display/{token}` where `{token}` is a 64-character hex string. The token is stored securely (hashed in the database) and can only be viewed through the Settings UI.
+
+## Next steps
+
+- **[Check-In & Check-Out](./check-in-check-out.md)** — the prep and deploy actions that drive the pack-progress indicators.
+- **[Pull Sheets](./pull-sheets.md)** — the printed pick list behind each dispatch on the board.

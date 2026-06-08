@@ -4,11 +4,15 @@ sidebar_position: 1
 
 # Equipment
 
-The Equipment page (sidebar: **Inventory > Equipment**) is where you manage your entire gear catalogue — serialised assets, bulk assets, and models.
+The **Equipment** page (sidebar: **Inventory > Equipment**) is the working catalogue of everything you own — serialised assets, bulk assets, and the models that describe them. This is where you build out your inventory once, so that quoting, pick sheets, and condition tracking all draw from the same accurate list. Spend the time here up front and the rest of the platform stops guessing.
+
+Most of your catalogue is built from two building blocks: **models** (the template) and **assets** (the individual units). Get the relationship right and adding your tenth SM58 takes two clicks.
 
 ## Understanding models vs assets
 
-A **model** is the template — "Shure SM58" with its specs, category, and default pricing. An **asset** is the individual unit — "SM58 #001" with its own asset tag and serial number. You create the model first, then add individual units under it.
+A **model** is the template — "Shure SM58" with its specs, category, and default pricing. An **asset** is the individual unit — "SM58 #001" with its own asset tag and serial number. You create the model once, then add individual units under it.
+
+Think of a theatre rig: you own forty ETC Source Four profiles. "Source Four 750W" is the *model* — one record holding the manufacturer, the day rate, and the photo. The forty fixtures are the *assets* — `TTP-00101` through `TTP-00140`, each with its own serial number, maintenance history, and current location. When you quote "12 × Source Four", you're booking against the model; when the warehouse picks them, they scan individual assets.
 
 ## Adding serialised equipment
 
@@ -62,6 +66,10 @@ Your tag format is set in **Settings > Inventory**:
 - **Separator** — character between prefix and number
 
 Tags must be unique across your organisation. If you enter a tag that's already in use, GearFlow shows an error and you can choose another.
+
+### Labels vs. tags
+
+Don't confuse the **asset tag** (the unique barcode/QR identifier above) with **tags** — the free-form labels you can attach to any asset, model, kit, or category for grouping and search. Tags are great for cross-cutting groupings the category tree doesn't capture: `tour-2026`, `rf-coordinated`, `needs-recert`, `client-owned`. Add them in the **Tags** field on the create/edit form, then search or filter by them later. Tags are stored lowercase and shared across your whole organisation, so autocomplete suggests existing ones as you type.
 
 ## The equipment table
 
@@ -164,3 +172,10 @@ Documents are available on the asset detail page and in reports. Commonly attach
 ## Mobile considerations
 
 On mobile, the equipment table shows a compact view with fewer columns. Tap any row to see full details. The **Add** button shifts to a floating action button at the bottom-right of the screen. Filtering and searching work the same as desktop.
+
+## Next steps
+
+- **[Accessories](./accessories.md)** — attach the clamps, bonds, and cables that must travel with each fixture so they never get left behind.
+- **[Custom Fields](./custom-fields.md)** — track gear-specific data like rig number, firmware version, or DMX address on your assets.
+- **[Categories](./categories.md)** — organise models and kits into a browsable hierarchy.
+- **[CSV Import / Export](./csv-import.md)** — load hundreds of models and assets in one go, or bulk-update rental rates.

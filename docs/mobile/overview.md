@@ -4,7 +4,9 @@ sidebar_position: 0
 
 # Mobile & PWA
 
-GearFlow is a Progressive Web App (PWA) — it runs in your mobile browser but can be installed on your home screen like a native app. No app store download required.
+GearFlow is a Progressive Web App (PWA) — it runs in your mobile browser but installs to your home screen and opens full-screen like a native app. There's no app store download, no separate version to keep updated, and it's the same GearFlow your office uses, just sized for a phone.
+
+This matters because the warehouse floor is where the work actually happens. During a festival bump-in, your crew lead shouldn't have to walk back to a desktop to confirm a road case of moving heads went out. They install GearFlow on their phone, scan tags as cases roll onto the truck, and deploy gear from the loading dock. The mobile interface is built for that — big touch targets, a scanner one tap away, and forms that slide up under your thumb.
 
 ## Installing GearFlow as a PWA
 
@@ -83,3 +85,9 @@ See **[Barcode Scanning](./barcode-scanning.md)** for details.
 | Reporting faults and damage | Mobile — take a photo on the spot |
 | Data entry and configuration | Desktop |
 | Report building and analysis | Desktop |
+
+## Next steps
+
+- **[Barcode Scanning](./barcode-scanning.md)** — point your phone's camera at a tag to look up, prep, deploy, or return gear.
+- **[Warehouse overview](../warehouse/overview.md)** — the prep, deploy, and return flow your crew runs from their phones.
+- **[Check-In / Check-Out](../warehouse/check-in-check-out.md)** — the scan-based workflow for moving gear to and from a project.

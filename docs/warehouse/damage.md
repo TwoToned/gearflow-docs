@@ -4,7 +4,9 @@ sidebar_position: 5
 
 # Damage Capture
 
-Report damage on returning equipment straight from the warehouse return flow. Camera-first capture with severity, notes, and optional client charge-back.
+Gear comes back broken. A moving light takes a knock in transit, a cable returns with a crushed connector, a haze machine comes back from a corporate gig leaking fluid. **Damage Capture** lets you record exactly that — at the moment it lands on the return bench, with photos — instead of scribbling it on a clipboard and hoping someone follows up.
+
+Logging damage during the return scan does two things at once. It pulls the asset out of circulation so it can't be booked onto the next job while it's broken, and it starts the paper trail you'll need if the damage is the client's responsibility. Say a hired-out Robe fixture comes back from a corporate event with a cracked lens: you photograph it on the return bench, mark it Major, note the cracked front glass, and flag it for charge-back. GearFlow holds the fixture in maintenance, raises a workshop ticket, and keeps that cost off your own books because the client is paying.
 
 ## Reporting damage
 
@@ -51,3 +53,9 @@ Browse every damage event across your organisation at `/damage`. The log shows:
 - Linked maintenance record
 
 Filter and search to find specific events. Each damage event links back to the originating project and line item.
+
+## Next steps
+
+- **[Workshop](../compliance/workshop.md)** — the kanban board where auto-created repair tickets land for your service team.
+- **[Maintenance](../compliance/maintenance.md)** — track the repair through to completion and back to available.
+- **[Check-In & Check-Out](./check-in-check-out.md)** — the return flow where damage is captured.

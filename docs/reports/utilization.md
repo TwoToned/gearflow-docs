@@ -6,6 +6,8 @@ sidebar_position: 3
 
 The Utilization page answers a fundamental question: **is this gear paying for itself?** It shows per-asset booking rates, revenue, costs, and net contribution so you can identify your best-performing gear and find equipment that's costing you money.
 
+It turns gut feel into numbers. You might suspect that rack of older LED pars never goes out, or that one hazer costs more in repairs than it earns — utilization confirms it. Filter to idle stock and you'll see the wireless mic kit that's booked 4% of the year and would pay for itself as a sub-hire. Filter to loss-making assets and you'll find the moving light whose fan replacements have quietly outrun its hire income. Either way you walk into the next purchasing or retirement decision with the figures in hand.
+
 ## Accessing utilization
 
 Go to **Reports > Utilization** or navigate to `/utilization`.
@@ -72,3 +74,9 @@ The utilization table is sortable by any column. Common workflows:
 ## Limitations
 
 Current revenue calculations only include line items where a specific asset was assigned at checkout. Model-only line items (where the asset hasn't been individually assigned) don't contribute to revenue yet. This avoids showing revenue numbers you can't verify, and the data becomes more accurate as your team assigns specific assets at checkout time.
+
+## Next steps
+
+- **[Built-in Reports](./built-in-reports.md)** — pair utilization with Model Popularity and Maintenance Costs by Type for the full picture before a purchase or retirement call.
+- **[Custom Reports](./custom-reports.md)** — group utilization by model or category to compare whole product lines, not just individual assets.
+- **[Maintenance](../compliance/maintenance.md)** — the records behind the maintenance-cost figures that eat into net contribution.

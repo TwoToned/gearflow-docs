@@ -4,7 +4,11 @@ sidebar_position: 0
 
 # Projects
 
-A **project** in GearFlow represents a rental job — from the initial client enquiry all the way through to final invoicing. Every quote, equipment list, crew schedule, and document lives inside a project.
+A **project** in GearFlow represents a rental job — from the initial client enquiry all the way through to final invoicing. Every quote, equipment list, crew schedule, and document lives inside a project, so the whole job stays in one place instead of scattered across spreadsheets, emails, and a whiteboard in the warehouse.
+
+Picture a three-day festival main stage. The promoter emails asking for a quote — you open a new project in **Enquiry**. You build the equipment list: a left/right line array hang, a sub array, a 12-way IEM rack, an RF rack for handhelds, and front-of-house and monitor consoles, organised into **PA**, **IEM**, and **RF** categories. Pricing flows from each model's rate card across the festival's billing period, and the project moves to **Quoting**, then **Quoted** when the PDF goes out. The promoter signs off — you mark it **Confirmed**. Now the operational side kicks in: bump-in on the Thursday, the show days, bump-out on the Sunday night, plus the crew assigned to each. The warehouse preps and the project moves to **Prepping → Deployed → On Site**, the gear comes home to **Returned → Completed**, and you raise the final invoice at **Invoiced**. One project carried the job end to end.
+
+The same shape works for a theatre season's run, a corporate AGM, or a national tour leg — only the equipment, dates, and crew change.
 
 ![Projects list — track every rental job from enquiry to invoice](/img/screenshots/projects.png)
 
@@ -92,4 +96,11 @@ Every project has a detail page with a full-width header and a two-column layout
 
 ## Project managers
 
-Projects support multiple project managers. Add or remove managers from the project sidebar. They appear as avatar icons in the project header.
+Projects support multiple project managers. Add or remove managers from the project sidebar. They appear as avatar icons in the project header. On a large festival or tour, this lets you put a dedicated PM on audio and another on lighting while both see the same project.
+
+## Next steps
+
+- [Creating Projects](./creating-projects.md) — start a new job and move it through the lifecycle
+- [Line Items](./line-items.md) — build the equipment list with categories and groups
+- [Quotes](./quotes.md) — set pricing, discounts, and tax, then send the quote
+- [Project Tasks](./tasks.md) — track the work that has to happen behind the scenes

@@ -4,7 +4,9 @@ sidebar_position: 4
 
 # Categories
 
-Categories organise your inventory into groups so you can find, filter, and report on equipment by type. For example: **Lighting > Moving Lights > VL 3500**.
+**Categories** are the filing system for your catalogue. They organise your models and kits into a browsable, nested hierarchy so you — and everyone quoting, picking, or reporting — can find gear by type instead of scrolling a flat list of thousands of items. For example: **Lighting > Moving Lights > Spot Fixtures**.
+
+A good category tree pays off everywhere. When a designer asks "what wireless do we have free that week?", you filter the equipment table to **Audio > Microphones > Wireless** and see it instantly. When you run an end-of-year report on utilisation, categories are how you slice "lighting earned $X, audio earned $Y". Set the structure up once and the whole platform inherits it.
 
 ## Category hierarchy
 
@@ -32,6 +34,10 @@ Audio
 ```
 
 In the category list, children are indented under their parents so you can see the structure at a glance.
+
+### Categories vs. tags
+
+Categories are a strict, single-parent tree — each model or kit lives in exactly one category. For cross-cutting groupings that don't fit a tree (e.g. everything heading out on `tour-2026`, or every fixture flagged `needs-recert`), use **tags** instead. A Source Four sits in **Lighting > Conventional** *and* can carry the tags `house-stock` and `repertory-2026`. Use categories for the "what kind of gear is this" question, tags for everything else.
 
 ## Browsing inventory by category
 
@@ -82,3 +88,9 @@ Categories with no items assigned are deleted immediately.
 ## Mobile considerations
 
 On mobile, the category list uses indented cards instead of a table. Tap a category to open its detail page. Subcategories and tabs (Models/Kits) are accessible through a swipeable section.
+
+## Next steps
+
+- **[Equipment](./equipment.md)** — assign models and assets to the categories you've created.
+- **[Kits](./kits.md)** — kits are categorised too, so they show up alongside models when you filter.
+- **[Inventory overview](./overview.md)** — see how categories fit alongside the four asset types.

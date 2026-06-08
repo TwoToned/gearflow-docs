@@ -4,7 +4,9 @@ sidebar_position: 4
 
 # Project Templates
 
-Project templates let you save a project's structure — categories, groups, line items, and services — to reuse for future jobs.
+Project templates let you save a project's structure — categories, groups, line items, and services — to reuse for future jobs. The payoff is biggest on work you do over and over: instead of rebuilding the same equipment list from scratch every time, you start from a proven setup and just swap the dates and client.
+
+For example, your "Standard Festival Stage" package — a left/right line array, sub array, FOH and monitor consoles, a 12-way IEM rack, an RF rack, plus the usual bump-in, bump-out, and crew services — can be saved once as a template. Next summer when a new festival enquiry comes in, you apply the template, set the dates and venue, adjust quantities for the stage size, and you're quoting in minutes. The same applies to a recurring theatre season layout or a repeat corporate AGM rig.
 
 ## Saving a project as a template
 
@@ -46,3 +48,9 @@ Group templates let you save individual group configurations — a faster way to
 
 - **Project templates** are managed where they're saved. To remove one, open the template project and delete it.
 - **Group templates** are managed in **Settings > Group Templates**, reachable from the Settings sidebar or by typing `@grouptemplates` in the command palette.
+
+## Next steps
+
+- [Creating Projects](./creating-projects.md) — apply a template when starting a new job
+- [Line Items](./line-items.md) — build the equipment structure that becomes a template
+- [Quotes](./quotes.md) — price a job spun up from a template

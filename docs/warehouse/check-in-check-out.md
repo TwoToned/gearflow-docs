@@ -4,7 +4,11 @@ sidebar_position: 1
 
 # Check-In & Check-Out
 
-GearFlow's warehouse uses a **Prep → Deploy → Return** flow for every project. This page covers each phase in detail.
+Check-in and check-out is the heartbeat of a rental warehouse: getting gear out the door to a job and accounting for every piece when it comes back. GearFlow models this as a **Prep → Deploy → Return** flow, so a piece of equipment is never simply "out" or "in" — it's picked and packed, then physically dispatched, then checked back against its condition. This page covers each phase in detail.
+
+Picture a two-day corporate gig at a hotel ballroom. Your crew preps the job into road cases the afternoon before — a line array, an RF rack, a lighting bar of Source Four LEDs. The next morning the cases are deployed to the truck. Two days later the gear comes back, you check it in case by case, flag the one fixture that took a knock, and the rest drops back to available for the next booking. GearFlow tracks each of those steps.
+
+![The warehouse view — work a project through prep, deploy, and return](/img/screenshots/warehouse.png)
 
 ---
 
@@ -92,3 +96,15 @@ Kit return works the same as deploy: verification dialog, atomic transaction, ex
 ### Force return
 
 If an asset or kit is stuck in `CHECKED_OUT` (e.g. a project was deleted while gear was still deployed), use **Force Return** to reset it to `AVAILABLE`. Available on asset detail pages, kit detail pages, and in bulk from the asset list.
+
+---
+
+## Real-time sync
+
+Every prep, deploy, and return broadcasts a live update to everyone in your organisation. If two crew members work the same project on different tablets — one scanning the lighting cases, one on audio — each sees the other's check-ins appear within seconds, no refresh needed. The shared progress bar stays accurate so nobody double-handles a case or deploys the same fixture twice.
+
+## Next steps
+
+- **[Pull Sheets](./pull-sheets.md)** — print the pick list your crew walks the shelves with.
+- **[Damage Capture](./damage.md)** — log a damaged fixture during the return scan and auto-raise a repair ticket.
+- **[Warehouse Displays](./displays.md)** — put today's dispatch and returns on a wall-mounted screen.

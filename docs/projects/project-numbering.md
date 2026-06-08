@@ -4,7 +4,9 @@ sidebar_position: 6
 
 # Project Numbering
 
-GearFlow can automatically generate project codes (e.g. `TTP-2025-001`, `SHOW-2026-042`) based on a configurable pattern. This is optional — if no pattern is configured, you enter project codes manually.
+A project code is the short reference everyone uses for a job — on the quote, on the truck manifest, on the crew's call sheet, in the email subject line. GearFlow can generate these codes automatically from a pattern you define, so every new job gets a consistent, sequential reference without anyone having to remember what number comes next.
+
+Say you want every job this year to read `GIG/2026/001`, `GIG/2026/002`, and so on, resetting the counter each January. You set that pattern once in settings; from then on, when a festival enquiry lands in June it's `GIG/2026/047` and the next one is `GIG/2026/048` — no clashes, no gaps, no guessing. This is optional: leave the pattern blank and you go on entering codes by hand exactly as before.
 
 ## Configuring auto-numbering
 
@@ -67,3 +69,8 @@ In the Settings page, a **Next project number** preview updates live as you edit
 ## On the project form
 
 When auto-numbering is on, the **Project Code** field shows an `Auto: <next number>` placeholder. Leave it blank to auto-generate. Enter a code manually to override.
+
+## Next steps
+
+- [Creating Projects](./creating-projects.md) — create a job and see the project code in action
+- [Projects Overview](./overview.md) — understand how projects fit into the rest of GearFlow
