@@ -44,3 +44,10 @@ Settings are organised into cards grouped by topic. Use the sidebar to jump betw
 ## Organisation data
 
 Your organisation's data is private to your team. Settings that affect data export or transfer (like CSV import/export) are available from the relevant feature pages as well as from Settings.
+
+## Next steps
+
+- **[Team & Roles](./team-and-roles.md)** — invite members and manage permissions.
+- **[Branding](./branding.md)** — customise logos, colours, and document templates.
+- **[Billing](./billing.md)** — manage your subscription and payment method.
+- **[Integrations](./integrations.md)** — connect WooCommerce, Discord, SSO, and more.

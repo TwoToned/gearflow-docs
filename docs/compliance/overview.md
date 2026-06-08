@@ -29,3 +29,10 @@ Compliance features use the following permissions:
 - **maintenance** — create, read, update, and delete maintenance records
 - **checkItem** — manage the check item library and assign checks to models
 - **warehouse** — scan and complete checks during prep and return flows
+
+## Next steps
+
+- **[Test & Tag](./test-and-tag.md)** — run electrical safety tests with the quick-test wizard.
+- **[Maintenance](./maintenance.md)** — schedule and track equipment servicing.
+- **[Workshop](./workshop.md)** — manage repairs through the kanban board.
+- **[Check Items](./check-items.md)** — set up pre-hire quality checks.

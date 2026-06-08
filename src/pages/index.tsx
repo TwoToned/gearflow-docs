@@ -414,7 +414,7 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} — The operator manual for AV and theatre rental`}
+      title={`${siteConfig.title} — The operator manual for AV and theatre rental companies`}
       description="GearFlow is the rental management platform for AV, lighting, staging, and theatre companies. Track equipment, projects, and crew from quote to return.">
       <Hero />
       <main>

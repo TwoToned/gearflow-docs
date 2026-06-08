@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'GearFlow Docs',
-  tagline: 'The operator\'s manual for AV & theatre rental companies',
+  tagline: 'The operator manual for AV and theatre rental companies',
   favicon: 'img/favicon.svg',
 
   future: {

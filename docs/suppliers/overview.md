@@ -59,3 +59,8 @@ Info cards at the top show contact details, account information, and a summary.
 ## Deleting a supplier
 
 You can't delete a supplier that has linked assets, line items, or orders. Remove those links first, then delete.
+
+## Next steps
+
+- **[Purchase Orders](./purchase-orders.md)** — order stock and consumables from your suppliers.
+- **[Sub-hires](./sub-hires.md)** — hire equipment from other rental houses.

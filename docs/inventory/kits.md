@@ -119,3 +119,10 @@ A kit's status is derived from its members. If any member is deployed, the kit i
 ## Mobile considerations
 
 On mobile, the kit detail page shows contents in a stacked card layout. Nested kits are collapsible. Verification toggles are larger for touch targets. Use the floating **Add Item** button to add new kit members.
+
+## Next steps
+
+- **[Equipment](./equipment.md)** — manage individual serialised and bulk assets.
+- **[Accessories](./accessories.md)** — permanently attach items to assets.
+- **[Custom Fields](./custom-fields.md)** — add your own data fields to any inventory item.
+- **[Inventory Overview](./overview.md)** — see the full inventory section.

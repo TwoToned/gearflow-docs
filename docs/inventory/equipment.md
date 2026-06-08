@@ -162,7 +162,7 @@ Documents are available on the asset detail page and in reports. Commonly attach
 
 | Status | How it gets there | How it changes |
 |---|---|---|
-| **Available** | Default for new assets | Deployed → Deployed |
+| **Available** | Default for new assets | Deploy → Deployed |
 | **Reserved** | Manually set from Available | Deploy or manual → Deployed / Available |
 | **Deployed** | Checked out via warehouse | Return → Available or In Maintenance |
 | **In Maintenance** | Returned with damage, or set manually | Complete maintenance → Available |

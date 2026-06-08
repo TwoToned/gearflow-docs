@@ -75,3 +75,9 @@ Custom roles can optionally be linked to an IdP group claim for automatic role a
 The member loses access to the organisation immediately. Their user account is not deleted — they can still log in if they belong to other organisations.
 
 An Owner cannot be removed. To transfer ownership, the current Owner must assign another member as Owner first.
+
+## Next steps
+
+- **[Billing](./billing.md)** — manage subscription plans and payment methods.
+- **[Branding](./branding.md)** — set up your company logo, colours, and document branding.
+- **[Integrations](./integrations.md)** — connect external services like WooCommerce and Discord.
