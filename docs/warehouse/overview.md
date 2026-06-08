@@ -44,3 +44,9 @@ Containers let you group gear that's packed together — a road case, flight cas
 ## Real-time sync
 
 Every warehouse action — prep, deploy, return — broadcasts a real-time update to everyone in your organisation. Open the same project on two screens and changes appear instantly without refreshing. See the team member who just checked in that last item without calling across the warehouse.
+
+## What's next?
+
+Now that you understand the three-phase flow, dig into the day-to-day mechanics:
+
+- **[Check-In / Check-Out](./check-in-check-out.md)** — the scan-based workflow your crew uses to deploy gear to a project and check it back in on return.

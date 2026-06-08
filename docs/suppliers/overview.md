@@ -6,6 +6,8 @@ sidebar_position: 0
 
 The **Suppliers** module keeps track of all the companies you buy or hire equipment from. Manage contact details, account info, and see related orders, assets, and sub-hires in one place.
 
+No rental house owns everything. When a job needs more moving lights than you have on the shelf, you sub-hire them from another AV supplier; when consumables run low, you order cables, gaffer tape, lamps, and batteries from your usual vendors. Tracking suppliers in GearFlow means you always know who you hired that extra line array from, what your account number and payment terms are, and which sub-hires are tied to which project — so nothing slips through the cracks at settlement time.
+
 ## Supplier list
 
 Go to **Suppliers** in the sidebar to see every supplier. The list shows:

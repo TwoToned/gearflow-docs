@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Kits
 
-A kit is a container that groups multiple assets so they rent as one unit. A "Drum Mic Kit" might contain 4 microphones, 4 clips, and a case — one tag on the shelf, one line item on the project, one scan at deploy and return.
+A kit is a container that groups multiple assets so they rent as one unit. An "RF Rack Kit" might contain 4 wireless receivers, 4 beltpacks, and 4 lavalier mics in a rack case — one tag on the shelf, one line item on the project, one scan at deploy and return.
 
 ## What kits are (and aren't)
 
@@ -14,7 +14,7 @@ Kits are **not** accessories. An accessory is permanently attached to its parent
 
 1. Go to **Inventory > Kits** and click **Add Kit**.
 2. Fill in the basic details:
-   - **Name** — required. e.g. "Basic Drum Kit"
+   - **Name** — required. e.g. "Portable PA Kit"
    - **Asset Tag** — auto-generated or enter a custom one
    - **Category** — helps with filtering and reports
    - **Description** — visible on the kit detail page and documents
@@ -59,7 +59,7 @@ Each item in the kit keeps its own price. The kit line shows as a parent with ch
 
 ## Nested kits (kits within kits)
 
-A kit can contain other kits. For example, a "Full Backline Package" kit might contain a "Drum Kit" kit, a "Guitar Amp Kit" kit, and a "Backline Case" bulk asset.
+A kit can contain other kits. For example, a "Corporate AV Package" kit might contain an "RF Rack Kit" kit, a "Portable PA Kit" kit, and a "Road Case" bulk asset.
 
 1. Open the parent kit detail page.
 2. Click **Add Item** and select **Kit**.

@@ -75,3 +75,7 @@ Scheduled reports are emailed as CSV attachments to the specified recipients. Th
 | Export to CSV | Owner, Admin, Manager |
 | Create and save custom reports | Owner, Admin, Manager |
 | Delete saved reports | Owner, Admin, Manager |
+
+## What's next?
+
+Reports are most powerful when you use them to drive decisions. A common starting point is **asset utilisation** — build a custom report against the Assets and Line Items sources, group by model, and aggregate how often each item ships out. You'll quickly see which gear earns its keep and which sits on the shelf, so you can plan sub-hires, justify new purchases, or retire underused kit. Save it, pin it to your dashboard, and schedule it to land in your inbox every month.

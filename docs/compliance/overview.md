@@ -11,6 +11,8 @@ GearFlow's compliance tools help you meet regulatory obligations, track maintena
 ### Test & Tag
 AS/NZS 3760:2022 compliant electrical testing. The quick-test wizard guides you through scan, visual inspection, electrical tests, and result recording. Every test is saved to the asset's history with pass/fail outcomes, next due dates, and printable labels.
 
+For example, before a power distro and a rack of moving lights head out to a venue, your crew can run each item through the quick-test wizard during prep — many venues and event insurers require current test-and-tag labels on any mains-powered gear brought on site, so catching an expired tag in the warehouse saves a scramble on show day.
+
 ### Maintenance
 Record and track maintenance across single or multiple assets. Schedule recurring servicing, attach photos, and monitor status through to completion. Maintenance records link to individual assets so you know which gear has been serviced.
 

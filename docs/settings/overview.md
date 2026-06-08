@@ -6,6 +6,10 @@ sidebar_position: 0
 
 The **Settings** page is where you configure your organisation — from team members and branding to integrations and billing.
 
+Settings are the control panel for how your whole rental operation runs. This is where you decide who can do what — team permissions for your warehouse crew versus your office staff — and how GearFlow represents your business to the outside world, like the branding on quotes going out to venue clients. Getting these right up front means everything downstream (asset numbering, document templates, notifications) behaves the way your business expects.
+
+![The Settings area, where you configure your organisation](/img/screenshots/dashboard.png)
+
 ## Settings sections
 
 | Section | What you can do |

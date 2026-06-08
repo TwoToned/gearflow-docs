@@ -6,6 +6,8 @@ sidebar_position: 1
 
 The **Team** section of Settings lets you manage who has access to your GearFlow organisation and what they can do.
 
+Roles map directly to how your rental business is staffed. A warehouse lead might need to prep, deploy, and return gear but shouldn't touch billing; an account manager needs to build quotes for venue clients but not manage maintenance schedules. Roles also gate visibility — for example, deciding who can pull warehouse reports or see financial figures on a project. Setting roles thoughtfully keeps day-to-day work fast while protecting the parts of the system that matter.
+
 ## Inviting team members
 
 1. Go to **Settings > Team**.
