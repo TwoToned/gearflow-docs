@@ -6,6 +6,8 @@ sidebar_position: 1
 
 This guide walks you through creating your GearFlow account, setting up your organisation, and getting oriented with the dashboard.
 
+![GearFlow Dashboard — your command centre for equipment, projects, and warehouse operations](/img/screenshots/dashboard.png)
+
 ## Creating your account
 
 1. Go to [gearflow.app](https://gearflow.app) and click **Get Started** or navigate directly to the registration page.

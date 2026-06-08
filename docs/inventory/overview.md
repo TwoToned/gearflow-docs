@@ -6,6 +6,8 @@ sidebar_position: 0
 
 GearFlow organises your equipment into three asset types. Understanding these types is key to tracking your gear effectively.
 
+![The Inventory list — browse, search, and filter your entire equipment catalogue](/img/screenshots/inventory.png)
+
 ## Asset types
 
 ### Serialised assets

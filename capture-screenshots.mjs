@@ -1,8 +1,9 @@
 import { chromium } from 'playwright';
 import { mkdirSync } from 'node:fs';
+import { execSync } from 'node:child_process';
 
 const BASE = 'http://localhost:3001';
-const EMAIL = 'docs@gearflow-test.local';
+const EMAIL = 'docs-screenshots@gearflow-test.local';
 const PASSWORD = 'gearflow2026!';
 const OUT = '/home/jayden/.hermes/kanban/workspaces/t_1d2c3dd5/gearflow-docs/static/img/screenshots';
 
@@ -21,58 +22,75 @@ async function settle(page) {
   try {
     await page.waitForLoadState('networkidle', { timeout: 15000 });
   } catch {
-    // networkidle can hang on apps with persistent connections; fall back
     await page.waitForLoadState('domcontentloaded');
   }
 }
 
+// Authenticate via curl and extract cookies
+console.log('Authenticating via curl...');
+const raw = execSync(
+  `curl -s -D - -X POST ${BASE}/api/auth/sign-in/email -H "Content-Type: application/json" -d '${JSON.stringify({ email: EMAIL, password: PASSWORD })}'`,
+  { encoding: 'utf-8', maxBuffer: 1024 * 1024 }
+);
+
+// Parse Set-Cookie headers
+const cookieHeaders = [];
+for (const line of raw.split('\r\n')) {
+  if (line.toLowerCase().startsWith('set-cookie:')) {
+    cookieHeaders.push(line.substring('set-cookie:'.length).trim());
+  }
+}
+console.log(`Found ${cookieHeaders.length} Set-Cookie headers`);
+
+// Parse cookies into Playwright format
+const playwrightCookies = [];
+for (const c of cookieHeaders) {
+  const semiParts = c.split(';');
+  const [name, value] = semiParts[0].split('=');
+  if (!name || value === undefined) continue;
+  const rest = semiParts.slice(1).map(s => s.trim().toLowerCase());
+  playwrightCookies.push({
+    name: name.trim(),
+    value: value.trim(),
+    domain: 'localhost',
+    path: '/',
+    httpOnly: rest.includes('httponly'),
+    secure: rest.includes('secure'),
+    sameSite: (rest.find(s => s.startsWith('samesite='))?.split('=')[1] || 'Lax').replace(/^./, c => c.toUpperCase()),
+  });
+}
+console.log(`Parsed ${playwrightCookies.length} cookies`);
+
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+await context.addCookies(playwrightCookies);
+console.log(`Set ${playwrightCookies.length} cookies in browser context`);
+
 const page = await context.newPage();
 
-// Log auth-related responses for diagnostics
-page.on('response', (r) => {
-  const u = r.url();
-  if (/sign-in|signin|auth|login/i.test(u)) {
-    console.log(`  [net] ${r.status()} ${r.request().method()} ${u}`);
-  }
-});
-
 try {
-  // 1. Login page (before typing)
+  // 1. Login page screenshot
   await page.goto(`${BASE}/login`, { waitUntil: 'domcontentloaded' });
   await settle(page);
   await shot(page, 'login');
 
-  // Email-first Better Auth flow: type email -> Continue
-  await page.fill('#email', EMAIL);
-  await page.getByRole('button', { name: /continue/i }).click();
-
-  // Wait for password field to appear
-  await page.waitForSelector('input[type="password"]', { timeout: 15000 });
-  await page.fill('input[type="password"]', PASSWORD);
-
-  // Click the password-submit "Sign in" button (exclude "Sign in with Passkey")
-  const signIn = page.locator('button[type="submit"]', { hasText: /^sign in$/i });
-  await signIn.click();
-
-  // 2. Wait for redirect away from /login (SPA client-side nav -> poll the URL)
-  const deadline = Date.now() + 25000;
-  while (Date.now() < deadline) {
-    if (!new URL(page.url()).pathname.includes('/login')) break;
-    // Surface any inline auth error if one appears
-    const err = await page.locator('[role="alert"], [data-slot="form-message"], .text-destructive')
-      .first().textContent().catch(() => null);
-    if (err && err.trim()) console.log(`  [auth error text] ${err.trim()}`);
-    await page.waitForTimeout(500);
-  }
-  if (new URL(page.url()).pathname.includes('/login')) {
-    throw new Error('Still on /login after sign-in attempt (no redirect)');
-  }
+  // 2. Dashboard (already authenticated via cookies)
+  await page.goto(`${BASE}/dashboard`, { waitUntil: 'domcontentloaded' });
   await settle(page);
+  const dashUrl = page.url();
+  console.log(`Dashboard URL: ${dashUrl}`);
+  if (dashUrl.includes('/login')) {
+    console.log('Auth failed — redirected to login');
+    // Try one more time via form
+    await page.fill('#email', EMAIL);
+    await page.getByRole('button', { name: /continue/i }).click();
+    await page.waitForTimeout(2000);
+    await page.fill('input[type="password"]', PASSWORD);
+    await page.locator('button[type="submit"]').click();
+    await page.waitForTimeout(5000);
+    console.log(`After form retry URL: ${page.url()}`);
+  }
   await shot(page, 'dashboard');
-
-  console.log(`Logged in. Landed at: ${page.url()}`);
 
   // 3-5. Authenticated pages
   for (const [path, name] of [
@@ -83,7 +101,13 @@ try {
     try {
       await page.goto(`${BASE}${path}`, { waitUntil: 'domcontentloaded' });
       await settle(page);
-      await shot(page, name);
+      const url = page.url();
+      if (url.includes('/login')) {
+        results.push({ name, ok: false, error: 'redirected to login' });
+        console.log(`✗ failed ${name}: redirected to login`);
+      } else {
+        await shot(page, name);
+      }
     } catch (e) {
       results.push({ name, ok: false, error: String(e).split('\n')[0] });
       console.log(`✗ failed ${name}: ${String(e).split('\n')[0]}`);
@@ -91,7 +115,6 @@ try {
   }
 } catch (e) {
   console.error('FATAL during flow:', e);
-  // Capture whatever is on screen for debugging
   try { await page.screenshot({ path: `${OUT}/error-state.png` }); console.log('Saved error-state.png'); } catch {}
   console.log('Current URL at failure:', page.url());
 } finally {

@@ -6,6 +6,8 @@ sidebar_position: 0
 
 The **Warehouse** module is where you manage the physical flow of equipment — picking gear off the shelves, packing it into containers, deploying it to a project, and checking it back in when it returns.
 
+![Warehouse view — manage check-in, check-out, pull sheets, and displays](/img/screenshots/warehouse.png)
+
 ## Three-phase flow
 
 Every project moves through three warehouse phases:

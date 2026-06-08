@@ -6,6 +6,8 @@ sidebar_position: 0
 
 A **project** in GearFlow represents a rental job — from the initial client enquiry all the way through to final invoicing. Every quote, equipment list, crew schedule, and document lives inside a project.
 
+![Projects list — track every rental job from enquiry to invoice](/img/screenshots/projects.png)
+
 ## Project lifecycle
 
 Each project moves through a status flow. You advance the status as the job progresses:
