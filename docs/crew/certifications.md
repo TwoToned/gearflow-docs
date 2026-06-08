@@ -22,6 +22,16 @@ On a crew member's detail page, open the **Certifications** tab and click **Add 
 
 For example, a rigger's profile might carry a Working at Heights ticket and an EWP licence, each with its own expiry date, so you can see at a glance that they're cleared for the flying work on a festival main stage.
 
+## Attaching certificate documents
+
+A database entry says a ticket exists; the scanned ticket proves it. When an auditor turns up — WorkSafe, a venue's compliance officer, or your insurer after an incident — they want to see the actual document, not a row in your system. GearFlow lets you attach a scanned copy of the real ticket or certificate to each certification record so that proof lives right next to the entry.
+
+On the **Add Certification** or **Edit Certification** form, use the document upload field to attach the scan. PDF, JPG, and PNG files are accepted, so a photo of a White Card or a PDF of an EWP licence both work. Once uploaded, the file stays with the certification and travels with the crew member's profile.
+
+This matters most when someone else is the gatekeeper. A venue running a major load-in may ask for copies of every rigger's height ticket before they'll let your crew touch the grid at bump-in, and a production manager might want first-aid and EWP tickets on file before signing off the crew list. With the scans already attached, you export or hand them over in minutes instead of chasing crew for photos the night before.
+
+Uploading a scan also feeds the verification workflow. A certification with no confirmed document sits at **Not Verified**; once an admin checks the uploaded scan against the entered details — name, certificate number, expiry — and confirms they match, the certification moves to **Current**. So the attachment isn't just storage: it's the evidence that turns a self-reported ticket into a verified one.
+
 ## Certification statuses
 
 | Status | Meaning |
