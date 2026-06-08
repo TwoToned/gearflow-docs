@@ -1,53 +1,245 @@
 /**
  * GearFlow Docs — Custom CSS
- * Industrial Calm aesthetic matching the GearFlow app.
- * Primary: Teal (oklch 195°), Font: DM Sans.
+ * "Industrial Calm" aesthetic matching the GearFlow app.
+ * Primary: deep teal (oklch ~195°). Base font: DM Sans.
+ *
+ * Brand tokens (from ~/code/gearflow):
+ *   light primary  oklch(0.45 0.12 195)   dark primary  oklch(0.60 0.14 195)
+ *   light accent   oklch(0.94 0.015 200)  dark accent   oklch(0.22 0.02 235)
  */
 
+/* ---------------------------------------------------------------- *
+ * Light mode
+ * ---------------------------------------------------------------- */
 :root {
-  /* GearFlow teal primary */
-  --ifm-color-primary: #2d9488;
-  --ifm-color-primary-dark: #27857a;
-  --ifm-color-primary-darker: #237066;
-  --ifm-color-primary-darkest: #1b5c54;
-  --ifm-color-primary-light: #39b3a3;
-  --ifm-color-primary-lighter: #4cc5b5;
-  --ifm-color-primary-lightest: #7dd8cc;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: 'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  /* Teal primary scale (oklch 0.45 0.12 195 → lighter/darker steps) */
+  --ifm-color-primary: #0d8a7d;
+  --ifm-color-primary-dark: #0c7c70;
+  --ifm-color-primary-darker: #0b7468;
+  --ifm-color-primary-darkest: #095f56;
+  --ifm-color-primary-light: #10a294;
+  --ifm-color-primary-lighter: #14b0a1;
+  --ifm-color-primary-lightest: #34c8ba;
+
+  /* Accent / surface tokens */
+  --gf-accent-bg: oklch(0.94 0.015 200);
+  --gf-accent-fg: oklch(0.20 0.02 220);
+  --gf-surface: #ffffff;
+  --gf-border: oklch(0.90 0.01 200);
+
+  /* Typography */
+  --ifm-font-family-base: 'DM Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-family-monospace: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, Menlo, Consolas,
+    monospace;
+  --ifm-code-font-size: 92%;
+  --ifm-heading-font-weight: 700;
+
+  /* Shape — GearFlow uses 0.5rem radius on cards */
+  --ifm-global-radius: 0.5rem;
+  --ifm-card-border-radius: 0.5rem;
+  --ifm-code-border-radius: 0.4rem;
+  --ifm-button-border-radius: 0.5rem;
+
+  /* Misc */
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.8);
+  --ifm-menu-color-background-active: var(--gf-accent-bg);
+  --ifm-menu-color-background-hover: var(--gf-accent-bg);
+  --docusaurus-highlighted-code-line-bg: rgba(13, 138, 125, 0.12);
+  --ifm-link-color: var(--ifm-color-primary);
 }
 
+/* ---------------------------------------------------------------- *
+ * Dark mode
+ * ---------------------------------------------------------------- */
 [data-theme='dark'] {
-  /* Boosted teal for dark mode vibrancy */
-  --ifm-color-primary: #4cc5b5;
-  --ifm-color-primary-dark: #39b3a3;
-  --ifm-color-primary-darker: #2d9488;
-  --ifm-color-primary-darkest: #237066;
-  --ifm-color-primary-light: #7dd8cc;
-  --ifm-color-primary-lighter: #a3e0d7;
-  --ifm-color-primary-lightest: #c8ede5;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Brighter teal for dark surfaces (oklch 0.60 0.14 195) */
+  --ifm-color-primary: #1fc1b0;
+  --ifm-color-primary-dark: #1cae9e;
+  --ifm-color-primary-darker: #1aa494;
+  --ifm-color-primary-darkest: #15877a;
+  --ifm-color-primary-light: #34cdbd;
+  --ifm-color-primary-lighter: #45d4c5;
+  --ifm-color-primary-lightest: #6dded2;
+
+  --gf-accent-bg: oklch(0.22 0.02 235);
+  --gf-accent-fg: oklch(0.94 0.005 220);
+  --gf-surface: #1a1d21;
+  --gf-border: oklch(0.30 0.015 235);
+
+  --ifm-background-color: #121417;
+  --ifm-background-surface-color: var(--gf-surface);
+  --ifm-navbar-background-color: rgba(18, 20, 23, 0.8);
+  --docusaurus-highlighted-code-line-bg: rgba(31, 193, 176, 0.18);
 }
 
-/* Make the sidebar cleaner */
+/* ---------------------------------------------------------------- *
+ * Navbar — subtle translucent / blurred backdrop
+ * ---------------------------------------------------------------- */
+.navbar {
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--gf-border);
+  box-shadow: none;
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+}
+
+/* ---------------------------------------------------------------- *
+ * Sidebar
+ * ---------------------------------------------------------------- */
+.menu {
+  padding: 0.75rem 0.5rem !important;
+  font-weight: 500;
+}
+
 .menu__link {
   font-size: 0.9rem;
+  border-radius: 0.4rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-/* Prose readability */
+.menu__link--active {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  background-color: var(--gf-accent-bg);
+}
+
+.menu__link:hover {
+  background-color: var(--gf-accent-bg);
+}
+
+.menu__list-item-collapsible:hover {
+  background-color: var(--gf-accent-bg);
+  border-radius: 0.4rem;
+}
+
+/* Thin accent rule down the active section */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--gf-border);
+}
+
+/* ---------------------------------------------------------------- *
+ * Typography / prose
+ * ---------------------------------------------------------------- */
 .markdown {
-  --ifm-h1-font-size: 2rem;
-  --ifm-h2-font-size: 1.5rem;
+  --ifm-h1-font-size: 2.1rem;
+  --ifm-h2-font-size: 1.55rem;
   --ifm-h3-font-size: 1.2rem;
 }
 
 .markdown h1 {
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .markdown h2 {
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
   padding-bottom: 0.3em;
+  margin-top: 2rem;
+}
+
+.markdown h3 {
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- *
+ * Code blocks & inline code
+ * ---------------------------------------------------------------- */
+code {
+  border: 1px solid var(--gf-border);
+  background-color: var(--gf-accent-bg);
+}
+
+.theme-code-block {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.theme-code-block,
+.prism-code {
+  border-radius: 0.5rem;
+}
+
+/* Token highlight uses the teal accent */
+.theme-code-block-highlighted-line {
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* ---------------------------------------------------------------- *
+ * Admonitions — tint the default "note/info" with teal
+ * ---------------------------------------------------------------- */
+.admonition,
+.theme-admonition {
+  border-radius: 0.5rem;
+  border-left-width: 4px;
+}
+
+.theme-admonition-note,
+.theme-admonition-info {
+  border-left-color: var(--ifm-color-primary);
+}
+
+/* ---------------------------------------------------------------- *
+ * Cards / tables / buttons
+ * ---------------------------------------------------------------- */
+.card {
+  border: 1px solid var(--gf-border);
+  border-radius: var(--ifm-card-border-radius);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 16px rgba(13, 138, 125, 0.1);
+}
+
+.button--primary {
+  --ifm-button-color: #ffffff;
+}
+
+table thead tr {
+  background-color: var(--gf-accent-bg);
+}
+
+/* ---------------------------------------------------------------- *
+ * Footer — GearFlow dark footer
+ * ---------------------------------------------------------------- */
+.footer--dark {
+  --ifm-footer-background-color: #0e1518;
+  --ifm-footer-color: #c9d4d3;
+  --ifm-footer-link-color: #9fb3b0;
+  --ifm-footer-title-color: #ffffff;
+  border-top: 2px solid var(--ifm-color-primary);
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary-lighter);
+}
+
+/* ---------------------------------------------------------------- *
+ * Pagination & TOC
+ * ---------------------------------------------------------------- */
+.pagination-nav__link {
+  border-radius: 0.5rem;
+  border: 1px solid var(--gf-border);
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
 }

@@ -5,19 +5,23 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'GearFlow Docs',
   tagline: 'The operator\'s manual for AV & theatre rental companies',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   future: {
     v4: true,
+    faster: { swcJsLoader: false },
   },
 
   url: 'https://twotoned.github.io',
   baseUrl: '/gearflow-docs/',
+  trailingSlash: false,
 
   organizationName: 'TwoToned',
   projectName: 'gearflow-docs',
+  deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'warn',
 
   i18n: {
     defaultLocale: 'en',
@@ -56,7 +60,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/TwoToned/gearflow-docs/tree/master/',
-          showLastUpdateTime: true,
+          showLastUpdateTime: false,
         },
         blog: false, // No blog — just docs
         theme: {
