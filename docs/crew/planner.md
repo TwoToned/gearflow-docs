@@ -8,6 +8,14 @@ The **Crew Planner** is a 14-day Gantt-style timeline of every active crew membe
 
 Staffing a busy season is a balancing act. You might be rostering an FOH engineer and two riggers for a festival weekend while a separate crew runs a corporate gala across town and your lighting op is mid-way through a theatre season. The planner lays all of that out as a grid: people down the side, dates across the top, coloured blocks where they're committed. One glance tells you that your best monitor engineer is already on the festival that Saturday, so the gala needs someone else — before you make a promise you can't keep.
 
+:::tip Planning beyond 14 days
+
+The planner shows a 14-day window at a time. For larger productions — a month-long tour, a theatre season, or summer festival bookings — use the **Back** and **Forward** arrows to scroll through the timeline, or jump ahead with the date picker.
+
+For the complete assignment picture without the 14-day window, open the project's **Crew** tab. It lists every booking on that project regardless of date range, including full details like role, pay rate, and call times.
+
+:::
+
 ## Opening the planner
 
 Go to **Crew** > **Planner** (or click the **Planner** link under Crew in the sidebar).
@@ -53,6 +61,12 @@ The coloured availability you see in the planner is set on each crew member's de
 - **Preferred** — actively wants work in this window, shown in green
 
 Keeping these current is what makes the planner trustworthy. A freelance rigger who marks themselves Preferred for a festival weekend is telling you to book them first.
+
+## Filtering by role or skill
+
+The planner shows every crew member regardless of their role or skills — there's no role or skill filter on this screen yet. If you need to find, say, every available lighting technician or all crew with rigging certs, the planner won't narrow the view for you.
+
+**Workaround:** The project **Crew** tab lists bookings by role on that project, and the **Crew overview** supports search and sorting. Use those screens to find specific roles, then cross-reference the planner for availability on the dates you need.
 
 ## Next steps
 
